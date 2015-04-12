@@ -55,6 +55,17 @@ module.exports = function (grunt) {
                     },
                 ],
             },
+            config: {
+                files: [
+                    {
+                        expand: true,
+                        timestamp: true,
+                        cwd: 'app',
+                        src: ['BingSiteAuth.xml','web.config'],
+                        dest: 'dist/'
+                    },
+                ],
+            },
         },
         clean: {
             build: ['dist/'],
