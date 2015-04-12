@@ -25,7 +25,8 @@ module.exports = function (grunt) {
         uglify: {
             options: {
                 preserveComments: 'some',
-                sourceMap: 'dist/site.min.js.map'
+                sourceMap: 'dist/site.min.js.map',
+                sourceMappingURL: 'site.min.js.map'
             },
             dist: {
                 src: '<%= concat.script.dest %>',
