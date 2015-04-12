@@ -15,7 +15,7 @@ module.exports = function (grunt) {
                     'bower_components/jquery-easing-original/jquery.easing.1.3.js',
                     'bower_components/jquery-cycle/jquery.cycle.all.js',
                     'bower_components/maximage/lib/js/jquery.maximage.js',
-                    'app/js/jquery.fullscreen.js',
+                    'bower_components/jquery-fullscreen-plugin/jquery.fullscreen.js',
                     'bower_components/jquery-hashchange/jquery.ba-hashchange.js',
                     'app/js/main.js',
                 ],
