@@ -28,6 +28,24 @@ $(document).ready(function() {
 			});
 		}
 	});
+
+    $('#maximage').maximage({
+        cycleOptions: {
+            fx: 'fade',
+            speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
+            timeout: 6000,
+            prev: '#arrow_left',
+            next: '#arrow_right',
+            pause: 0,
+        },
+        onFirstImageLoaded: function(){
+            jQuery('#maximage').fadeIn('fast');
+        }
+    });
+
+    if(location.hash) {
+        $('a[href='+location.hash+']').trigger('click');
+    }
 });
 
 (function() {
