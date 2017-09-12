@@ -1,0 +1,33 @@
+{
+  "browserslist": [],
+  "connector": {
+    "name": "jsdom",
+    "options": {
+      "waitFor": 1000
+    }
+  },
+  "formatter": "stylish",
+  "ignoredUrls": { ".*\\.google.*\\.com/.*": ["*"] },
+  "rules": {
+    "axe": "error",
+    "content-type": "error",
+    "disown-opener": "error",
+    "highest-available-document-mode": "off",
+    "html-checker": "error",
+    "manifest-exists": "error",
+    "manifest-file-extension": "error",
+    "manifest-is-valid": "error",
+    "meta-charset-utf-8": "error",
+    "meta-viewport": "error",
+    "no-disallowed-headers": ["error", { "ignore": ["Server"] }],
+    "no-friendly-error-pages": "error",
+    "no-html-only-headers": "error",
+    "no-protocol-relative-urls": "error",
+    "no-vulnerable-javascript-libraries": "error",
+    "ssllabs": "off",
+    "strict-transport-security": "error",
+    "validate-set-cookie-header": "error",
+    "x-content-type-options": "off"
+  },
+  "rulesTimeout": 120000
+}
