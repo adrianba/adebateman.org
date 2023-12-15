@@ -1,0 +1,1 @@
+npx --yes browser-sync start --server --port 8880 -w
